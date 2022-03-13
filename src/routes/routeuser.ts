@@ -1,5 +1,6 @@
 import {Request, Response, Router} from 'express'
 import controlleruser from '../controllers/controllersUser'
+import { auth } from '../helpers/service'
 
 
 
@@ -16,9 +17,11 @@ class Rutasuser{
 
     routes() {
 
-        this.router.post('/registro', controlleruser.reguser)
+        this.router.post('/registro', controlleruser.registrouser)
 
         this.router.post('/log', controlleruser.login)
+
+        this.router.get('/log', auth, controlleruser.logout)
 
     }
  

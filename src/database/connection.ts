@@ -37,7 +37,7 @@ export async function getdatosuser(p: sql.ConnectionPool , nickname: string){
         const result = await p.request()
         .input('nick', nickname)
         .query(String(config.q1));
-        p.close();
+        
         return result;
 
     } catch (error) {

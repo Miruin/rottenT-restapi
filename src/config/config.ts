@@ -9,6 +9,9 @@ export default{
     dbserver: process.env.DB_SERVER || '',
     dbdatabase: process.env.DB_DATABASE || '',
 
-    q1: process.env.Q1
+    q1: process.env.Q1,
+    q2: process.env.Q2,
+
+    secrettoken: process.env.SECRET_TOKEN
 
 };
