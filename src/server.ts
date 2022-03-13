@@ -1,4 +1,5 @@
 import express, { Application } from 'express'
+import rutauser from './routes/routeuser';
 import config from './config/config'
 
 class server {
@@ -26,6 +27,7 @@ class server {
 
     routes() {
 
+        this.app.use(rutauser)
 
     }
     
