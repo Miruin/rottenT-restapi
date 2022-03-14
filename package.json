@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "ts": "tsc -w",
+    "tsc": "tsc",
     "dev": "nodemon  ./dist/server.js",
-    "start": "tsc && node dist/server.js"
+    "prestart":"tsc",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
