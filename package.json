@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "ts": "tsc -w",
-    "tsc": "tsc",
     "dev": "nodemon  ./dist/server.js",
-    "prestart":"tsc",
+    "tsc": "node_modules/typescript/bin/tsc",
+    "build":"tsc",
+    "postinstall": "npm run build",
     "start": "node dist/server.js"
   },
   "keywords": [],
