@@ -23,6 +23,10 @@ class Rutasuser{
 
         this.router.get('/log', auth, controlleruser.logout)
 
+        this.router.post('/actualizar', auth, controlleruser.datosuser)
+
+        this.router.put('/actualizar', auth, controlleruser.moduser)
+
     }
  
 }

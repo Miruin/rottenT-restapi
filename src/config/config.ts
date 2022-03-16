@@ -11,6 +11,8 @@ export default{
 
     q1: process.env.Q1,
     q2: process.env.Q2,
+    q3: process.env.Q3,
+    q4: process.env.Q4,
 
     secrettoken: process.env.SECRET_TOKEN
 

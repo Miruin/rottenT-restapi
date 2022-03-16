@@ -1,6 +1,7 @@
 import express, { Application } from 'express'
 import rutauser from './routes/routeuser';
 import config from './config/config'
+import cors from 'cors'
 
 class server {
 
@@ -22,6 +23,7 @@ class server {
 
         this.app.use(express.urlencoded({ extended: false }));
         this.app.use(express.json());
+        this.app.use(cors());
 
     }
 
