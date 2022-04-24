@@ -7,9 +7,9 @@
     "ts": "tsc -w",
     "dev": "nodemon  ./dist/server.js",
     "tsc": "node_modules/typescript/bin/tsc",
-    "build":"tsc",
+    "build": "tsc",
     "postinstall": "npm run build",
-    "start": "node dist/server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
